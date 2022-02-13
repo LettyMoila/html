@@ -2,31 +2,69 @@
 <html>
     <head>
         <title>Contact us</title>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
+        
+        <!--city + province i reside in, form(name + surname html input,email address, 
+            message html textarea, submit html button/input and any other input i deem necessary)-->
         <header>
-           <h1 >Contact us</h1>
+           <table>
+               <tr>
+                   <td>
+                       <h1>Contact us</h1>
+                   </td>
+
+                   <td align="right">
+                      <img width="50px" src="https://cdn.pixabay.com/photo/2016/03/22/04/23/map-1272165__340.png" alt=""> Polokwane, Limpopo
+                   </td>
+               </tr>
+           </table>
         </header>
 
         <main>
-            <h3>Reach me through:</h3>
-            <table>
-                <tr>    
-                <td>Telephone</td>
-                <td>082 292 0773</td>
-                </tr>
+        
+            <div> <label for="name">First name</label></div>
+            <div>
+                <input placeholder="input name" type="text" name="namebox" id="name">
+            </div>
 
-                <tr>
-                    <td>email</td>
-                    <td><a href="mailto:moilankibelo@gmail.com">send email</a></td>
-                    </tr>
+                <div><label for="surname">Surname</label></div>
+                <div>
+                    <input placeholder="input surname" type="text" id="surname">
+                </div>
 
-                    <tr>
-                        <td>facebook</td>
-                        <td><a href="https://www.facebook.com/joyful.bello">find letty moila</a></td>
-                        </tr>
-            </table>
+                <div><label for="cell">Cellphone</label></div>
+                <div>
+                    <input placeholder="input number" type="tel" name="" id="cell">
+                </div>
+
+                    <div><label for="email">Email</label></div>
+                    <div>
+                        <input placeholder="email address" type="email" name="useremail" id="email">
+                    </div>
+
+                        <div><label for="message">Your message</label></div>
+                    <div>
+                        <textarea placeholder="type in your message.." id="message">
+
+                        </textarea>
+                    </div>
+
+                    <p>Receive notification through?</p>
+
+                    <span>
+                        <p>Email<input type="radio" name="email" id="emradio"></p>
+                    </span>
+                    <span>
+                        <p>Phone<input type="radio" name="Cellphone" id="celradio"></p>
+                        
+                    </span>
+
+                       <div>
+                           <button id="button" type="submit">Submit</button>
+                       </div>
         </main>
 
         <footer></footer>

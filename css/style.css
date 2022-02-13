@@ -1,0 +1,53 @@
+.image{
+    width: 250px;
+    height: auto;
+}
+video{
+width: 100% ;
+height: auto;
+}
+#logo{
+    width: 150px;
+    height: auto;
+}
+table{
+    width: 100%;
+}
+footer{
+    background-color: cadetblue;
+}
+header{
+    background-color: cadetblue;
+}
+a{
+    padding-left: 5%;
+    margin: 2%;
+    text-decoration: wavy;
+}
+input{
+    color: darkgray;
+    border-color: #ff6347;
+    padding: 6px;
+    width: 50%;
+}
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+textarea{
+    size: 250px;
+    width: 50%;
+    height: auto;
+    resize: none;
+}
+#bio{
+    width: 70%;
+    text-align: left;
+}
+#rbtn{
+    border-radius: 5%;
+    margin: 5%;
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/46/f8/c5/46f8c5721769b18d9a4a29c2844086d4.gif);
+}
