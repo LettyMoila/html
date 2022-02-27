@@ -24,33 +24,50 @@
         </header>
 
         <main>
-        
-            <div> <label for="name">First name</label></div>
+            <form  action="https://formspree.io/f/mnqwdwlg"
+            method="POST">
+
+            <div>
+            
+                <label for="name">First name
+                </label>
+            </div>
             <div>
                 <input placeholder="input name" type="text" name="namebox" id="name">
             </div>
-
-                <div><label for="surname">Surname</label></div>
-                <div>
-                    <input placeholder="input surname" type="text" id="surname">
-                </div>
-
-                <div><label for="cell">Cellphone</label></div>
-                <div>
-                    <input placeholder="input number" type="tel" name="" id="cell">
-                </div>
-
-                    <div><label for="email">Email</label></div>
-                    <div>
-                        <input placeholder="email address" type="email" name="useremail" id="email">
-                    </div>
-
-                        <div><label for="message">Your message</label></div>
-                    <div>
-                        <textarea placeholder="type in your message.." id="message">
-
-                        </textarea>
-                    </div>
+                
+            <div>
+                <label for="surname">Surname
+                </label>
+            </div>
+            <div>
+                <input placeholder="input surname" type="text" id="surname">
+            </div>
+                   
+            <div>
+                <label for="cell">Cellphone
+                </label>
+            </div>
+            <div>
+                <input placeholder="input number" type="number" name="" id="cell" pattern="[0-9]{10}">
+            </div>
+                    
+            <div>
+                <label for="email">Email
+                </label>
+            </div>
+            <div> 
+                <input placeholder="email address" type="email" name="useremail" id="email" oninput="validateEmail()">
+            </div>
+                       
+            <div>
+                <label for="message">Your message
+                </label>
+            </div>
+            <div>
+                <textarea placeholder="type in your message.." id="message">
+                </textarea>
+            </div>
 
                     <p>Receive notification through?</p>
 
@@ -62,11 +79,19 @@
                         
                     </span>
 
-                       <div>
                            <button id="button" type="submit">Submit</button>
-                       </div>
+
+                    <script src="./css/index.js">
+                        
+                    </script>   
+            
         </main>
 
-        <footer></footer>
+        <footer><!-- Use Google Maps to Integrate iFrame Maps to show where your tertiary institution is located on your contact us page-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.70311803032!2d29.44698151462471!3d-23.900143980074578!
+            2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d83b18bfa0b7%3A0x392adb724b0e979!2sTshwane%20University%20of%20Technology
+            %2C%20Polokwane%20Campus!5e0!3m2!1sen!2sza!4v1645565165617!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </form>
+        </footer>
     </body>
 </html>

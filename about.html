@@ -15,44 +15,31 @@
         <main>
             <table>
                 <tr>
-                    <h3>Personal information:</h3>
-                    <p>Name: Letty</p>
-                    <p>Surname: Moila</p>
-                    <p>Address: 765 Unit D<br> Mankweng<br> Polokwane<br> 0727</p>
-                    <p>Contact number: 0822920773</p>
-                    <p>Email address: moilankibelo@gmail.com</p>
-                    <p>Criminal record: none</p>
+                    <h3 id="forPersonal"></h3>
+                    <p id="firstName"></p>
+                    <p id="lastname"></p>
+                    <p id="address"></p>
+                    <p id="cnumber"></p>
+                    <p id="email"></p>
+                    <p id="criminalRec"></p>
                 </tr>
 
                 <tr>
-                    <h3>Educational background:</h3>
-                    <h4>Tshwane University of Technology</h4>
-                    <p>National diploma in software development</p>
-                    <p>2019 - 2021</p>
+                    <h3 id="forEdu"></h3>
+                    <h4 id="institution"></h4>
+                    <p id="qualiicatin"></p>
+                    <p id="year"></p>
 
                 </tr>
 
                 <tr>
-                    <h3>Projects:</h3>
-                    <p>AI dietitian application - Android studio, retrofit API, firebase</p>
+                    <h3 id="forSkills"> </h3>
+                    <p id="emSkills"></p>
                 </tr>
-
+                    
                 <tr>
-                    <h3>Skills: </h3>
-                    <ol>
-                        <li>Detail orientation</li>
-                        <li>Expedited adaptability</li>
-                        <li>Teamwork</li>
-                    </ol>
-                </tr>
-
-                <tr>
-                    <h3>Activities: </h3>
-                    <ol>
-                        <li>Choir</li>
-                        <li>CSRC - ETO</li>
-                        <li>Yoga</li>
-                    </ol>
+                    <h3 id="forActs"> </h3>
+                    <p id="acts"></p>
                 </tr>
             </table>
         </main>
@@ -65,5 +52,44 @@
             <a href="tel: 0822920773"> <img width="100px" src="https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" alt=""></a>
             <a href="mailto:moilankibelo@gmail.com"><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png" alt=""></a>
         </footer>
+
+        <script>
+           let name, surname, address, number, email, cRecord;
+           const activities = ["Choir", "Res committee", "Yoga"];
+           const skills = ["Detail orientation", "Expedited adaptability", "Teamwork"];
+           var heading1 = 'Personal information';
+           var heading2 = 'Educational background';
+           var heading3 = 'Skills';
+           var heading4 = 'Activities';
+
+           name ='Name: ' + 'Letty ';
+            surname ='Surname:' + ' Moila';
+            address ='Address: ' + ' 765 Unit D<br> Mankweng<br> Polokwane<br> 0727';
+            number = 'Contact number: ' +  0822920773;
+            email = 'Email address:' + ' moilankibelo@gmail.com';
+           cRecord = 'Criminal record: ' + 'none';
+           
+           document.getElementById('firstName').innerHTML = name;
+           document.getElementById('lastname').innerHTML = surname;
+           document.getElementById('address').innerHTML = address;
+           document.getElementById('cnumber').innerHTML = number;
+           document.getElementById('email').innerHTML = email;
+           document.getElementById('criminalRec').innerHTML =cRecord ;
+
+           //To display headings
+           document.getElementById('forPersonal').innerHTML = 'Personal information';
+           document.getElementById('forEdu').innerHTML = 'Educational background';
+           document.getElementById('forSkills').innerHTML = 'Skills';
+           document.getElementById('forActs').innerHTML4 = 'Activities';
+               
+              document.getElementById('institution').innerHTML = "Tshwane University of Technology";
+              document.getElementById('iqualification').innerHTML = "National diploma in software development";
+              document.getElementById('year').innerHTML = "2019 - 2021";
+
+              //to display skills and activities
+              document.getElementById('emSkills').innerHTML = '<ol><li>' + activities[0] + '</li><li>' + activities[1] + '</li><li>' +  activities[2] + '</li></ol>';
+              document.getElementById('acts').innerHTML = '<ol><li>' + skills[0] + '</li><li>' + skills[1] + '</li><li>' + skills[2] +'</li></ol>';
+           
+        </script>
     </body>
 </html>
